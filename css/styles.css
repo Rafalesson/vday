@@ -9,7 +9,7 @@ body, html {
 
 /* Aplicando o background que você enviou */
 body {
-    background-image: url('./bg_vday_mobile_002.jpg'); /* USE O NOME EXATO DA SUA IMAGEM */
+    background-image: url('../media/bg_vday_mobile_002.jpg'); 
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -22,12 +22,12 @@ body {
     /* MÁGICA ACONTECENDO AQUI! */
     /* Você vai precisar ajustar esses valores para casar perfeitamente com a sua imagem */
     position: absolute;
-    width: 65%;   /* Estimativa da largura do retângulo branco */
-    height: 60%;  /* Estimativa da altura do retângulo branco */
+    width: 55%;   /* Estimativa da largura do retângulo branco */
+    height: 45%;  /* Estimativa da altura do retângulo branco */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 0 15px rgba(0,0,0,0.2); /* Sombra suave para integrar melhor */
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 /* Fazendo o vídeo preencher o container */
@@ -118,6 +118,7 @@ button:hover {
     background-color: red;
     opacity: 0;
     animation: explode 0.8s ease-out forwards;
+    z-index: 2000;
 }
 
 @keyframes explode {
