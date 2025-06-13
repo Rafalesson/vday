@@ -113,8 +113,8 @@ button:hover {
 /* Estilo para as "explosões" do clique no Sim */
 .confetti {
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     background-color: red;
     opacity: 0;
     animation: explode 0.8s ease-out forwards;
@@ -130,4 +130,13 @@ button:hover {
         transform: translate(var(--x), var(--y)) scale(0);
         opacity: 0;
     }
+}
+
+@media screen and (min-width: 768px) {
+    /* Ajustes para telas maiores */
+    .video-container {
+        width: 45%; 
+        height: 100%; 
+    }
+    
 }
